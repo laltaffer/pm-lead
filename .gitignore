@@ -1,3 +1,6 @@
 .superpowers/
 .DS_Store
 *.swp
+# Second-brain-private project notes — never push to the public repo.
+_brain.md
+CLAUDE.md
