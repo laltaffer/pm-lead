@@ -105,7 +105,10 @@ switch. Size it **bottom-up as the primary number** — customers × price × co
 where nothing will be charged, customers × conversion × what each one actually gets;
 top-down industry figures are a sanity check only, never the primary number.
 List the alternatives the target user has today, including manual process and doing
-nothing. Framework selection is routed in [frameworks.md](frameworks.md).
+nothing. A pursue is not automatically a build: decide whether the capability is bought,
+built, or partnered for, and record the choice — buy and partner are usually Type 1
+calls, classified per [bet-ledger.md](bet-ledger.md) §3. Framework selection is routed in
+[frameworks.md](frameworks.md).
 **Artifact:** a filled [templates/opportunity-assessment.md](templates/opportunity-assessment.md).
 **Gate:** pursue or kill, decided explicitly and recorded either way. "Park it" is a kill
 with a revisit date, not a third option.
