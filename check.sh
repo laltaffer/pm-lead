@@ -85,6 +85,22 @@ for f in $CLEAN; do
   else ok "$f clean"; fi
 done
 
+echo "== operator overlay stays private =="
+# LOCAL.md is optional. If it exists it must be gitignored and untracked, and the
+# pack must still be complete without it — SKILL.md may only reference it as optional.
+if [ -e LOCAL.md ]; then
+  git check-ignore -q LOCAL.md 2>/dev/null \
+    && ok "LOCAL.md is gitignored" || bad "LOCAL.md exists but is NOT gitignored"
+  if git ls-files --error-unmatch LOCAL.md >/dev/null 2>&1; then
+    bad "LOCAL.md is tracked by git — it must never be published"
+  else ok "LOCAL.md untracked"; fi
+else
+  ok "no LOCAL.md (optional)"
+fi
+grep -q 'If a `LOCAL.md` sits beside this file' SKILL.md 2>/dev/null \
+  && ok "SKILL.md documents the overlay as optional" \
+  || bad "SKILL.md does not describe LOCAL.md as an optional overlay"
+
 echo "== AGENTS.md is platform-neutral =="
 if [ -e AGENTS.md ] && grep -nEq -- 'Claude Code|claude\.ai|~/\.claude' AGENTS.md; then
   bad "AGENTS.md contains platform-specific references"

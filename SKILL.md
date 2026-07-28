@@ -17,6 +17,11 @@ every bet this pipeline funds and is stated once, in that file, not here.
 downstream of research: it decides what to build, why, and in what order. It never writes
 production code.
 
+If a `LOCAL.md` sits beside this file, read it first and apply it throughout: it carries
+one operator's own preferences, portfolio, and companion wiring. It is optional and
+untracked — the pack is complete without it, and nothing in it may relax a gate or an
+anti-theater refusal.
+
 ## First: pick a mode and say so
 
 State the mode in your first reply. The operator can override with one word. Mode is
