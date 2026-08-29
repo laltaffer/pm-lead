@@ -56,6 +56,12 @@ blocks after Stage 7.
   signal is not standing in for a retention curve the product actually owes. A
   value-action-rate claim for a product whose value *is* repeat use fails this check and
   reverts to the retention-curve requirement.
+- [ ] When the mode resolved to `zero-to-one` because demand was **unknown** rather than
+  absent, the record names the systems searched for pre-existing evidence and what could
+  not be reached, per [mode-gate.md](mode-gate.md) §2. An unknown nobody searched is not a
+  finding — for a business the operator did not build, the evidence routinely sits in
+  systems no one opened. "No signal exists" and "we had no access to their analytics" are
+  different verdicts and cannot be recorded as the same one.
 - [ ] The closing two-line form exists in the record — mode declared, plus signal, tier,
   source, and segment named.
 

@@ -110,6 +110,33 @@ sense defined in `bet-ledger.md` §2.
 4. **If nothing survives steps 1–3, declare `zero-to-one`** and say why in one sentence.
    This is the default, not a fallback.
 
+### `Unknown` is a verdict, not a starting position
+
+`Unknown` resolves to `zero-to-one`, and that resolution is only sound once someone has
+looked. When the bet is for a business the operator did not build — an existing company,
+an acquired product, an advisory engagement — demand evidence may already sit in systems
+the operator has never seen: revenue by segment, a CRM, support volume, churn by cohort,
+an analytics property, a dormant ad account, prior research nobody published.
+
+So before `unknown` resolves the mode, run the search, and time-box it:
+
+1. **Ask what exists, then go read it.** Ask which systems hold customer, revenue, and
+   usage data, and get access to them. Do not ask the operator to characterize the
+   evidence on the business's behalf — retention, activation, and conversion mean
+   different things in different rooms, and a summary of a number is not the number.
+2. **Test any signal you find against the bet's population**, per the scope rule below.
+   Evidence from an existing business usually covers a different segment or a different
+   job than the new bet does, which makes it evidence about something else.
+3. **Record what was searched and what was missing.** The gate's output names the sources
+   examined, not just the verdict. "No demand signal exists" and "we could not get access
+   to their analytics" are different findings, and writing the second as the first is how
+   a `zero-to-one` path gets funded against a question the business already answered.
+
+Then resolve. Looking does not lower the bar — most searches still end in `zero-to-one`,
+and only a signal that survives the scope rule moves it. What the search prevents is the
+opposite failure: running a discovery path to rediscover what the business has known for
+years, and charging someone for the privilege.
+
 ### The scope rule — the gate is per bet, not per company
 
 Demand validated for one product, segment, or job does not transfer to another. A company

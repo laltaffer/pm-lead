@@ -1,6 +1,6 @@
 ---
 name: pm-lead
-description: DEFAULT ENTRY POINT for product work — product strategy, discovery, prioritization, roadmaps, PRD scoping, and both 0→1 and iterative development. Runs a gated mode→frame→opportunity→bets→sequence→narrative→measure→handoff pipeline in which nothing earns build capacity without a falsifiable assumption, an evidence tier, and a dated kill criterion. Use for "what should we build", "is this worth building", "prioritize this roadmap", "write the PRD", "is this strategy any good". For building the thing, hand off to your engineering pipeline; for evidence about real users, hand the question to your research practice; for positioning craft and launch copy, hand product truth to your marketing function.
+description: DEFAULT ENTRY POINT for product work — product strategy, discovery, prioritization, roadmaps, PRD scoping, and both 0→1 and iterative development, on your own product or as an advisor on someone else's. Runs a gated mode→frame→opportunity→bets→sequence→narrative→measure→handoff pipeline in which nothing earns build capacity without a falsifiable assumption, an evidence tier, and a dated kill criterion. Use for "what should we build", "is this worth building", "prioritize this roadmap", "write the PRD", "is this strategy any good". For building the thing, hand off to your engineering pipeline; for evidence about real users, hand the question to your research practice; for positioning craft and launch copy, hand product truth to your marketing function.
 ---
 
 # PM Lead — Product Leadership Pipeline
@@ -65,13 +65,34 @@ exec narrative in six-pager form, org sequencing, coaching and gap-analysis inst
 The competencies do not change with altitude; the unit of work, the medium, and the
 failure mode do. Detail lives in [altitude.md](altitude.md).
 
+### The advisory lens — orthogonal to all four modes
+
+Ownership is the default: the pipeline assumes the operator controls the capacity a bet
+would consume. Naming `advisory` says otherwise — the product belongs to someone else and
+the operator recommends rather than allocates. Three things change, and no gate relaxes.
+
+- **The evidence predates you.** The gate test runs unmodified, but `unknown` is a
+  statement about your access before it is a statement about the business. Run the search
+  in [mode-gate.md](mode-gate.md) §2 before `unknown` resolves the mode.
+- **The capacity is theirs.** An appetite is a recommendation against a budget you do not
+  control, so "recommended and not funded" is a real outcome rather than a failure to
+  decide. Record what you would fund, what you would not, and which the owner chose.
+- **HANDOFF crosses an organizational boundary.** Stage 7 hands to their team, on their
+  tooling, without your context in the room. Anything that only works while you are in
+  the room did not survive the handoff.
+
+The five bet fields and the anti-theater refusals apply unchanged. When a gate needs
+evidence the engagement cannot get, that is recorded as unmet with the reason — never
+waved through as a pass because someone else owns the system.
+
 ## The stages
 
 ### 0. MODE — which discipline are we in?
 When the work is a build mode, run the gate test in [mode-gate.md](mode-gate.md): is there
 validated demand for *this specific bet*? Ask for the signal by name, its source, and its
 tier, and check that it covers the population this bet is for. Unknown resolves to
-`zero-to-one`. `strategy` and `audit` make no claim about demand, so that test does not
+`zero-to-one` — after the evidence search in [mode-gate.md](mode-gate.md) §2, not
+instead of it. `strategy` and `audit` make no claim about demand, so that test does not
 run against them; they carry a different subject instead.
 **Artifact:** the declared mode plus whatever that mode's gate requires — for
 `zero-to-one` and `iterate`, the demand evidence in the two-line form that closes
